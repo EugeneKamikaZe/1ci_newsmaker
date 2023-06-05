@@ -1,0 +1,10 @@
+// Gap
+//
+
+@each $prop, $abbrev in (row-gap: gr, column-gap: gc) {
+    @each $index, $size in $spacers {
+        .#{$abbrev}-#{$index} {
+            #{$prop}: $size !important;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Partnership",
+  "status": {
+    "title": "Partnership Status",
+    "table": {
+      "head": [
+        "Level",
+        "Country",
+        "Products",
+        "Discount",
+        "Fee Due Date",
+        "Status"
+      ]
+    }
+  },
+  "contracts": {
+    "title": "Partnership Contracts",
+    "table": {
+      "head": [
+        "Level",
+        "Country",
+        "Products",
+        "Discount",
+        "Fee Due Date",
+        "Status"
+      ]
+    }
+  },
+  "partnership": {
+    "title": "Partnership Status",
+    "text": "You can apply for partner status in one or several countries. With this application, you can as well add new countries or new products. Your application will be reviewed by a regional manager. Once it is approved,the partner status and corresponding discounts will be available to you.",
+    "button": "Request Partner Status"
+  },
+  "developer": {
+    "title": "Developer Status",
+    "text": "If you are a developer, you can apply for registration with your employer. To submit the application, you will need your employer's Partner ID.",
+    "button": "Send Request to Partner"
+  },
+  "reviewed": "Your application will soon be reviewed by a regional manager.",
+  "text": "While your application is under review, now is a good time to learn what you need to do next to obtain the partner status."
+}

@@ -1,0 +1,16 @@
+:root {
+    --transition-delay: 0.2s;
+    --transition-color: color var(--transition-delay);
+    --transition-border-color: border-color var(--transition-delay);
+    --transition-bg-color: background-color var(--transition-delay);
+    --transition-svg: fill var(--transition-delay);
+    --transition-opacity: opacity var(--transition-delay);
+    --transition-box-hadow: box-shadow var(--transition-delay);
+    --transition-transform: transform var(--transition-delay);
+
+    //  Compound
+    --transition-btn:
+        var(--transition-color),
+        var(--transition-bg-color),
+        var(--transition-border-color);
+}

@@ -1,0 +1,12 @@
+//  Flex Direction
+//
+
+@each $prop, $abbrev in (flex-direction: fd) {
+    .#{$abbrev}-column {
+        #{$prop}: column !important;
+    }
+
+    .#{$abbrev}-row {
+        #{$prop}: row !important;
+    }
+}

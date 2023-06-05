@@ -1,0 +1,32 @@
+.search {
+    position: relative;
+
+    @include media-breakpoint-up("lg") {
+        max-width: 352px;
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .input {
+        outline: none;
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        background-color: $white;
+        padding-right: 32px;
+        padding-left: 16px;
+        width: 100%;
+        min-height: 40px;
+
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: 0 0 0 1px $light-blue;
+        }
+    }
+}

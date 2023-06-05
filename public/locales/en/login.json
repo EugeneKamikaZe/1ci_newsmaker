@@ -1,0 +1,44 @@
+{
+  "sign_in": {
+    "title": "Sign In to 1Ci Account",
+    "email": "Email Address",
+    "password": "Password",
+    "remember": "Remember me",
+    "forgot_password": "Forgot password?",
+    "additional_text": "Don't have an account?",
+    "link_for_additional_text": "Create one",
+    "button": "Sign in"
+  },
+  "sign_up": {
+    "title": "Register to 1Ci Account",
+    "name": "Name",
+    "lastname": "Last Name",
+    "country": "Country",
+    "email": "Email Address",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "notice": {
+      "text": "By clicking \"Register\", you agree to our",
+      "and": "and",
+      "terms_link": "Terms of Service",
+      "privacy_link": "Privacy Notice"
+    },
+    "additional_text": "Already have an account?",
+    "link_for_additional_text": "Sign in here",
+    "subscribe": "Subscribe to Newsletter",
+    "button": "Register"
+  },
+  "forgot_password": {
+    "title": "Forgot your password?",
+    "email": "Enter Email",
+    "additional_text": "Already have an account?",
+    "link_for_additional_text": "Sign in here",
+    "button": "Send a Request"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "terms": "Terms of Use",
+    "copy": "© 2023 1C International"
+  }
+}

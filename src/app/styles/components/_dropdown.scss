@@ -1,0 +1,48 @@
+.dropdown {
+    list-style: none;
+
+    &-menu {
+        display: none;
+        transform: none;
+        list-style: none;
+        word-break: break-word;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    &.show {
+        .menu-item {
+            color: $yellow;
+
+            .icon {
+                fill: $yellow;
+            }
+        }
+    }
+
+    &-item {
+        margin-bottom: 16px;
+    }
+
+    &-submenu {
+        display: none;
+        position: relative !important;
+        transform: none !important;
+        padding-left: 16px;
+        list-style: none;
+
+        li {
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 16px;
+            }
+        }
+
+        &.show {
+            display: block;
+        }
+    }
+}

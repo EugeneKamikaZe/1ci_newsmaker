@@ -1,0 +1,140 @@
+.popover {
+    word-wrap: break-word;
+    display: block;
+    z-index: 100;
+    box-shadow: $popover-shadow;
+    border-radius: 4px;
+    background-clip: padding-box;
+    background-color: $popover-bg;
+
+    &-arrow {
+        display: block;
+        position: absolute;
+        width: $popover-arrow-width;
+        height: $popover-arrow-height;
+
+        &::before,
+        &::after {
+            display: block;
+            position: absolute;
+            border-style: solid;
+            border-color: transparent;
+            content: "";
+        }
+    }
+}
+
+.bs-popover-top {
+    > .popover-arrow {
+        bottom: subtract(-$popover-arrow-height, $popover-border-width);
+
+        &::before {
+            bottom: 0;
+            border-width: $popover-arrow-height ($popover-arrow-width * 0.5) 0;
+            border-top-color: $popover-arrow-outer-color;
+        }
+
+        &::after {
+            bottom: $popover-border-width;
+            border-width: $popover-arrow-height ($popover-arrow-width * 0.5) 0;
+            border-top-color: $popover-arrow-color;
+        }
+    }
+}
+
+.bs-popover-end {
+    > .popover-arrow {
+        bottom: 30px;
+        left: subtract(-$popover-arrow-height, $popover-border-width);
+        width: $popover-arrow-height;
+        height: $popover-arrow-width;
+
+        &::before {
+            left: 0;
+            border-width:
+                ($popover-arrow-width * 0.5) $popover-arrow-height
+                ($popover-arrow-width * 0.5) 0;
+            border-right-color: $popover-arrow-outer-color;
+        }
+
+        &::after {
+            left: $popover-border-width;
+            border-width:
+                ($popover-arrow-width * 0.5) $popover-arrow-height
+                ($popover-arrow-width * 0.5) 0;
+            border-right-color: $popover-arrow-color;
+        }
+    }
+}
+
+.bs-popover-bottom {
+    > .popover-arrow {
+        top: subtract(-$popover-arrow-height, $popover-border-width);
+
+        &::before {
+            top: 0;
+            border-width:
+                0 ($popover-arrow-width * 0.5) $popover-arrow-height
+                ($popover-arrow-width * 0.5);
+            border-bottom-color: $popover-arrow-outer-color;
+        }
+
+        &::after {
+            top: $popover-border-width;
+            border-width:
+                0 ($popover-arrow-width * 0.5) $popover-arrow-height
+                ($popover-arrow-width * 0.5);
+            border-bottom-color: $popover-arrow-color;
+        }
+    }
+}
+
+.bs-popover-start {
+    > .popover-arrow {
+        right: subtract(-$popover-arrow-height, $popover-border-width);
+        width: $popover-arrow-height;
+        height: $popover-arrow-width;
+
+        &::before {
+            right: 0;
+            border-width:
+                ($popover-arrow-width * 0.5) 0 ($popover-arrow-width * 0.5)
+                $popover-arrow-height;
+            border-left-color: $popover-arrow-outer-color;
+        }
+
+        &::after {
+            right: $popover-border-width;
+            border-width:
+                ($popover-arrow-width * 0.5) 0 ($popover-arrow-width * 0.5)
+                $popover-arrow-height;
+            border-left-color: $popover-arrow-color;
+        }
+    }
+}
+
+.bs-popover-auto {
+    // stylelint-disable
+    &[data-popper-placement^='top'] {
+        @extend .bs-popover-top;
+    }
+
+    &[data-popper-placement^='right'] {
+        @extend .bs-popover-end;
+    }
+
+    &[data-popper-placement^='bottom'] {
+        @extend .bs-popover-bottom;
+    }
+
+    &[data-popper-placement^='left'] {
+        @extend .bs-popover-start;
+    }
+    // stylelint-enable
+}
+
+#popover-settings {
+    margin-left: -16px;
+    padding: 16px;
+    width: 140px;
+}

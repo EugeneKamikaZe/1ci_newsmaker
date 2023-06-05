@@ -1,0 +1,22 @@
+.notification {
+    &-message {
+        margin-bottom: 16px;
+        color: $default-light;
+        line-height: 1.25rem;
+
+        &_date {
+            font-weight: 600;
+            font-size: $font-size-xs;
+        }
+
+        &_text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &.unreaded {
+                font-weight: 600;
+            }
+        }
+    }
+}

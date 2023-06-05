@@ -1,0 +1,11 @@
+.support {
+    &-item {
+        margin-bottom: 8px;
+    }
+
+    .external__link,
+    .btn-link {
+        font-size: $font-size-xs;
+        line-height: 16px;
+    }
+}

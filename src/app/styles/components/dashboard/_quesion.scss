@@ -1,0 +1,18 @@
+.questions {
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    &-link {
+        transition: $color-transition;
+        width: 100%;
+        color: $default;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+}

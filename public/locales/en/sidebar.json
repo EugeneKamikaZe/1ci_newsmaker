@@ -1,0 +1,61 @@
+{
+  "main": {
+    "store": {
+      "title": "store",
+      "subMenu": {
+        "buy": {
+          "title": "buy",
+          "subMenu": {
+            "apps": "apps & platform",
+            "not_for_release": "not for release",
+            "partner_fee": "partner fee",
+            "certification_attempts": "certification attempts",
+            "smua": "SMUA"
+          }
+        },
+        "orders": "my orders"
+      }
+    },
+    "purchases": {
+      "title": "my purchases",
+      "subMenu": {
+        "distributives": "distributives",
+        "licenses": "licenses",
+        "customers": "customers",
+        "deposition": "deposition"
+      }
+    },
+    "subscriptions": {
+      "title": "subscriptions",
+      "subMenu": {
+        "smua": "SMUA",
+        "quarter": "quarter fee"
+      }
+    },
+    "developers": {
+      "title": "developers & certifications",
+      "subMenu": {
+        "certifications": "certifications",
+        "developers": "developers"
+      }
+    },
+    "links": {
+      "title": "quick links",
+      "subMenu": {
+        "academy": "academy",
+        "support": "support",
+        "partner_kit": "partner kit"
+      }
+    },
+    "submit": {
+      "title": "submit a request"
+    }
+  },
+  "personal": {
+    "account": "account",
+    "partnership": "partnership",
+    "bonus": "bonus billing",
+    "policy": "privacy policy",
+    "log_out": "log out"
+  }
+}

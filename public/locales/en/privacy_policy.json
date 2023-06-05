@@ -1,0 +1,35 @@
+{
+  "back": "Back to main page",
+  "title": "Privacy Policy",
+  "initial": {
+    "text1": "This Privacy Policy determines the Administration of the website",
+    "1ci_site": "www.1ci.com",
+    "text2": "(hereinafter — the Website) obligations to nondisclosure and providing protection of personal data confidentiality, which a User provides by the Administration request when filling in forms on the Website.\nPrivacy Policy refers to all information that the Website can collect about a User while browsing the Website. By filling in the forms on this Website a User consents to all terms of Privacy Policy.\nPrivacy Policy may be modified by the Administration without preliminary notice. The actual version of Privacy Policy can always be found at",
+    "1ci_privacy": "www.1ci.com/privacy-policy"
+  },
+  "collect_info": {
+    "title": "Information we collect",
+    "text": "When filling in forms, a User provides the Administration his Personal Data that may include name, surname, company's name, job title, country, e-mail address and/or phone number. When filling in forms and /or browsing the Website, the Website may automatically or with User's participation collect additional personal information, including IP-address, browser version, address of a page's referrer and other technical data, which can be used for identification of the User without carrying additional measures."
+  },
+  "personal_data": {
+    "title": "Personal Data Usage ",
+    "ul_title": "The Administration may use Personal Data to:",
+    "li1": "a) Provide you with the information, products and services you request from us;",
+    "li2": "b) Provide you with information about other goods and services we offer that are similar to those you have already purchased or enquired about;",
+    "li3": "c) Notify you about changes to our service;",
+    "li4": "d) To measure or understand the effectiveness of advertising we serve to you and others, and to deliver relevant advertising to you.",
+    "text": "User's Personal Data processing is not limited by a certain period of time and may involve the usage of information systems and automated tools.\nThe Website Administration takes all necessary technical and organizational precautions to protect User's Personal Data against unauthorized or accidental access, deletion or alteration, blocking, copying, disclosure or other unauthorized actions of third parties. In case of loss or disclosure of User's Personal Data the Administration notifies the User about the fact of his Personal Data loss or disclosure."
+  },
+  "user_obligations": {
+    "title": "User's obligations",
+    "text": "User undertakes to provide his personal data and keep it actual."
+  },
+  "administration_obligations": {
+    "title": "Administration obligations",
+    "ul_title": "The Administration undertakes to:",
+    "li1": "a) Use provided information exclusively for the purposes described in the Clause 3 of this Privacy Policy;",
+    "li2": "b) Provide confidential storage of Personal Data and not disclose it without the prior written permission of a User, not sell, exchange, publish or disclose it by any other means, except for the ones indicated in Clause 2 of this Privacy Policy.",
+    "li3": "c) Take precautions to protect confidentiality of User's Personal Data according to standard procedures.",
+    "li4": "d) Block personal data of a User immediately after request receipt from the User or his legal representative or competent authority for the protection of subjects' Personal Data for the period of checking, in case of invalid data or unauthorized actions detected. "
+  }
+}

@@ -1,0 +1,13 @@
+.tab {
+    &-content {
+        position: relative;
+    }
+
+    &-pane {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

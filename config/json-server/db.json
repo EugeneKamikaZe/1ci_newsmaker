@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.admin",
+      "password": "$2a$10$3TkcEV9QinBq6CSwRQOQ9O5kySmNzRi8yc.AkBLHXdv5bEZzGaP9S",
+      "username": "admin",
+      "userLastname": "admin",
+      "country": "",
+      "id": 1
+    }
+  ]
+}

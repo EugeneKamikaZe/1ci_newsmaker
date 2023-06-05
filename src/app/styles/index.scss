@@ -1,0 +1,26 @@
+//  variables
+@import "variables/colors", "variables/typography", "variables/transition", "variables/sizes",
+    "variables/z-index";
+
+//  elements
+@import "elements/btns", "elements/headers", "elements/icons", "elements/form", "elements/drawer";
+
+//  variables & functions
+@import "utilites/normalize", "utilites/variables", "utilites/functions", "utilites/grid-variables",
+    "utilites/spacing", "utilites/gap", "utilites/default-values";
+
+//  mixins
+@import "mixins/breakpoints", "mixins/grid-framework", "mixins/grid";
+
+//  components
+@import "components/layout", "components/base", "components/menu", "components/popover",
+    "components/dropdown", "components/tabs", "components/table", "components/block",
+    "components/search", "components/nav", "components/accordion", "components/customers",
+    "components/modal", "components/loaders";
+
+//  dashboard
+@import "components/dashboard/index", "components/dashboard/quesion",
+    "components/dashboard/partner-kit", "components/dashboard/support";
+
+//  pages
+@import "page/login", "page/account", "page/certificate", "page/store", "page/distributives";

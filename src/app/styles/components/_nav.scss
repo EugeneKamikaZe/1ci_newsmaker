@@ -1,0 +1,39 @@
+.nav {
+    &-tabs {
+        display: flex;
+        margin-bottom: 32px;
+        border-bottom: 2px solid $gray-400;
+        list-style: none;
+    }
+
+    &-item {
+        margin-right: 32px;
+    }
+
+    &-link {
+        cursor: pointer;
+        border: none;
+        background-color: $white;
+        padding: 0 0 8px;
+        color: $gray-600;
+        font-weight: 500;
+        font-size: $font-size-lg;
+        font-family: $headings-font;
+
+        &.active {
+            position: relative;
+            color: $default;
+
+            &::after {
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                border-radius: 2px 2px 0 0;
+                background-color: $blue;
+                width: 100%;
+                height: 4px;
+                content: "";
+            }
+        }
+    }
+}
