@@ -1,9 +1,0 @@
-.certificates {
-    .title__block {
-        padding: 32px 24px;
-
-        @include media-breakpoint-up("md") {
-            flex-direction: row;
-        }
-    }
-}
