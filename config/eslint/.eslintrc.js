@@ -1,5 +1,5 @@
 module.exports = {
-    ignorePatterns: ['node_modules', ''],
+    ignorePatterns: ['node_modules', 'OLD_FOR_REFACTOR', 'reports'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -9,25 +9,23 @@ module.exports = {
         sourceType: 'module',
     },
     extends: [
+        'eslint:recommended',
         'plugin:react/recommended',
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
-        // 'plugin:boundaries/recommended',
-        'plugin:cypress/recommended',
+        'plugin:prettier/recommended',
         'airbnb',
-        'plugin:i18next/recommended',
-        'plugin:storybook/recommended',
         'prettier',
     ],
     plugins: [
         'react',
         'simple-import-sort',
+        'unused-imports',
         '@typescript-eslint',
-        'i18next',
         'react-hooks',
         'ulbi-tv-plugin',
-        'unused-imports',
+        'prettier',
     ],
     env: {
         browser: true,
@@ -43,30 +41,18 @@ module.exports = {
                 alwaysTryTypes: true,
             },
         },
-        // 'boundaries/ignore': ['**/*.test.*'],
     },
     rules: {
+        'prettier/prettier': [
+            'error',
+            {
+                tabWidth: 4,
+                endOfLine: 'auto',
+                singleQuote: true,
+            },
+        ],
         'import/no-cycle': 'error',
-        'unused-imports/no-unused-imports': 'warn',
-        // 'boundaries/element-types': [
-        //     'error',
-        //     {
-        //         default: 'disallow',
-        //         rules: [
-        //             { from: 'app', allow: ['processes', 'pages', 'widgets', 'features', 'entities', 'shared'] },
-        //             { from: 'processes', allow: ['pages', 'widgets', 'features', 'entities', 'shared'] },
-        //             { from: 'pages', allow: ['widgets', 'features', 'entities', 'shared'] },
-        //             { from: 'widgets', allow: ['features', 'entities', 'shared'] },
-        //             { from: 'features', allow: ['entities', 'shared'] },
-        //             { from: 'entities', allow: ['shared'] },
-        //             { from: 'shared', allow: ['shared'] },
-        //         ],
-        //     },
-        // ],
-        'react/jsx-indent': [2, 4],
-        'react/jsx-indent-props':
-            [2, 4],
-        indent: [2, 4],
+        'unused-imports/no-unused-imports': 'error',
         'react/jsx-filename-extension': [
             2,
             { extensions: ['.js', '.jsx', '.tsx'] },
@@ -75,61 +61,45 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
         'react/function-component-definition': 'off',
-        'import/no-unresolved': 'warn',
+        'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
         'import/extensions': 'off',
         'import/no-duplicates': 'error',
-        'import/no-extraneous-dependencies': ["warn", {"devDependencies": true}],
+        'import/no-extraneous-dependencies': [
+            'warn',
+            { devDependencies: true },
+        ],
         'no-param-reassign': 'off',
         'no-shadow': 'off',
         'no-underscore-dangle': 'off',
         'no-unused-vars': 'warn',
         'no-undef': 'warn',
-        'simple-import-sort/imports': 'warn',
+        'simple-import-sort/imports': 'error',
         'simple-import-sort/exports': 'warn',
         'max-len': ['error', { ignoreComments: true, code: 150 }],
-        'i18next/no-literal-string': [
-            'error',
-            {
-                markupOnly: true,
-                ignoreAttribute: [
-                    'as',
-                    'role',
-                    'data-testid',
-                    'to',
-                    'target',
-                    'justify',
-                    'align',
-                    'border',
-                    'direction',
-                    'gap',
-                    'feature',
-                    'color',
-                    'variant',
-                    'size',
-                    'wrap',
-                ],
-            },
-        ],
         'jsx-a11y/label-has-associated-control': 'warn',
         'jsx-a11y/no-static-element-interactions': 'warn',
         'jsx-a11y/click-events-have-key-events': 'warn',
+        'jsx-a11y/tabindex-no-positive': 'warn',
         'react-hooks/rules-of-hooks': 'error', //  Checks rules of Hooks
         'react-hooks/exhaustive-deps': 'error', //  Checks effect dependencies,
-        'ulbi-tv-plugin/path-checker': ['error', {
-            alias: '~',
-        }],
+        'ulbi-tv-plugin/path-checker': [
+            'error',
+            {
+                alias: '~',
+            },
+        ],
         'ulbi-tv-plugin/layer-imports': [
             'error',
             {
-                alias: '@',
+                alias: '~',
                 ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
             },
         ],
         'ulbi-tv-plugin/public-api-imports': [
             'error',
             {
-                alias: '@',
+                alias: '~',
                 testFilesPatterns: [
                     '**/*.test.*',
                     '**/*.story.*',
@@ -149,7 +119,6 @@ module.exports = {
         {
             files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
             rules: {
-                'i18next/no-literal-string': 'off',
                 'max-len': 'off',
             },
         },

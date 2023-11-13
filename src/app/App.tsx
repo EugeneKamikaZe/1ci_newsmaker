@@ -1,18 +1,43 @@
+import { LexicalComposer } from '@lexical/react/LexicalComposer';
+import { ContentEditable } from '@lexical/react/LexicalContentEditable';
+import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
+import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin';
+import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin';
 import { Suspense } from 'react';
-import { isMobile } from 'react-device-detect';
 
-import { useTheme } from '~/app/providers/ThemeProvider';
+import { ToolbarPlugin } from '~/widgets/Toolbar/ui/Toolbar';
 
-import { AppRouter } from './providers/router/index';
+function onError(error: any) {
+    console.error(error);
+}
+
+const theme = {};
 
 const App = () => {
-    const { theme } = useTheme();
+    const initialConfig = {
+        namespace: 'MyEditor',
+        theme,
+        onError,
+    };
 
     return (
         <Suspense fallback="">
-            <div data-theme={theme} className={isMobile ? 'layout layout-mobile' : 'layout'}>
-
-                <AppRouter />
+            <div className="">
+                <LexicalComposer initialConfig={initialConfig}>
+                    <ToolbarPlugin />
+                    <RichTextPlugin
+                        contentEditable={
+                            <ContentEditable className="contentEditable" />
+                        }
+                        placeholder={
+                            <div className="placeholder">
+                                Enter some text...
+                            </div>
+                        }
+                        ErrorBoundary={LexicalErrorBoundary}
+                    />
+                    <HistoryPlugin />
+                </LexicalComposer>
             </div>
         </Suspense>
     );
