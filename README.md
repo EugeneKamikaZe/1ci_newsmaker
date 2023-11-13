@@ -1,2 +1,2 @@
-# react-redux-ts-fsd-template
-Simple start with React FSD template
+# News maker 
+make news for 1Ci
