@@ -1,7 +1,6 @@
 {
-  "name": "reactui",
-  "private": true,
-  "description": "React UI for my.1ci",
+  "name": "newsmaker",
+  "description": "News maker for 1Ci",
   "main": "index.js",
   "version": "0.0.1",
   "scripts": {
